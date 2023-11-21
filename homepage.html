@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>diet Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    header {
+      background-color: darksalmon;
+      text-align: center;
+      padding: 2px;
+      font-size: 25px;
+      color: white;
+    }
+    nav {
+      float: left;
+      width: 30%;
+      height: 400px;
+      background-color: burlywood;
+      padding: 20px;
+      font-size: xx-large;
+    }
+    nav li{
+        margin-bottom: 20px;
+    }
+    article{
+      float: left;
+      padding: 20px;
+      width: 70%;
+      background-color:cornflowerblue;
+      height: 400px; 
+      font-size: x-large;
+    }
+    footer {
+      background-color: darkolivegreen;
+      padding: 8px;
+      height: 150px;
+      text-align: center;
+      color: white;
+    }
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    article:not(:target) {
+      display: none;
+    }
+    article:target {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Welcome to DIET</h2>
+  </header>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+    </nav>
+    <article id="home">
+        <h1>Home</h1>
+      <h2>Dhanekula Institute of Engineering and Technology</h3>
+    </article>
+    <article id="about">
+        <h1>About Us</h2>
+      <h4>Our Motivation for developing CAS</h4>
+      <p>As we have seen all the works going on in our college, we observed that faculty find it extremely difficult to do it manually. Especially, when some mistakes are identified in the work, they must check the whole work to find the faults. And, a lot of paperwork has been done, which consumes a lot of our valuable time.
+        To overcome these problems, we have developed the College Administrative System (CAS), where all the work has been made easier. This system includes all the major components of the College Administration such as admissions, marks, timetables & attendance, exam schedules, invigilation & remunerations, alumni, etc., Using this system, most of the work can be done easily.
+    </p>
+    </article>
+    <article id="contact">
+      <h1>Contact Us</h1>
+      <h4>Cell no:-9876543210<br>
+      Email id:diet@gmail.com</h4>
+    </article>
+    <article id="login">
+        <h2> Login Page</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+            <button type="submit">Login</button>
+          </form>
+    </article>
+  </section>
+  <footer>
+    <h2>All rights received to DIET 2023</h2>
+  </footer>
+</body>
+</html>
